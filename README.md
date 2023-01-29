@@ -18,3 +18,6 @@ This application has unit tests written in Jest. In order to run these tests, pl
 
 ### Rules
 This game follows the rules outlined in this reference `https://bicyclecards.com/how-to-play/blackjack/`. It is important to know that when responding to command line prompts, the player must use lower case words. For example, please respond with 'yes' and 'no'. DO NOT respond with 'Yes' or 'No'.
+
+### Additional Features that were implemented
+I added betting to the functionality of the game.
