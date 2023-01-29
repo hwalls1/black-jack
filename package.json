@@ -1,0 +1,24 @@
+{
+  "name": "black-jack",
+  "version": "1.0.0",
+  "description": "Creates a black jack game that is played on the terminal",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && node index.js",
+    "test": "cd test && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hwalls1/black-jack.git"
+  },
+  "author": "Harrison Walls",
+  "bugs": {
+    "url": "https://github.com/hwalls1/black-jack/issues"
+  },
+  "homepage": "https://github.com/hwalls1/black-jack#readme",
+  "dependencies": {
+    "jest": "^29.4.1",
+    "node": "^18.13.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
