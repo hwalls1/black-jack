@@ -1,4 +1,4 @@
-const { Deck } = require('../src/card.js');
+import { Deck } from '../src/card.js';
 
 describe('Verify that the deck has 52 cards', () => {
     let deck;

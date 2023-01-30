@@ -1,4 +1,4 @@
-const { Card } = require('../src/card.js');
+import { Card } from '../src/card.js';
 
 describe('Test if card is the correct based on suit, rank and value ', () => {
     let card;

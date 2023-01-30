@@ -1,4 +1,4 @@
-const { Player } = require('../src/player.js');
+import { Player } from '../src/player.js';
 
 describe('Test the funds function with the players', () => {
     let player;
