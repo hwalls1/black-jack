@@ -1,5 +1,5 @@
-const { Deck } = require('./card.js')
-const { PlayersHand } = require('./player.js')
+import { Deck } from './card.js'
+import { PlayersHand } from './player.js'
 
 class Dealer extends PlayersHand {
     constructor(name) {
@@ -44,4 +44,4 @@ class Dealer extends PlayersHand {
     }
 }
 
-module.exports = { Dealer }
+export { Dealer }

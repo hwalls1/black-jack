@@ -83,4 +83,4 @@ class Player extends PlayersHand {
     }
 }
 
-module.exports = { Player, PlayersHand }
+export { Player, PlayersHand }

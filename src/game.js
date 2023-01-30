@@ -1,6 +1,6 @@
-const { Player } = require('./player.js')
-const { Dealer } = require('./dealer.js')
-const ps = require("prompt-sync")
+import { Player } from './player.js'
+import { Dealer } from './dealer.js'
+import ps from "prompt-sync"
 const prompt = ps()
 
 // This function initiates game play
@@ -39,7 +39,7 @@ const beginGamePlay = (readyToPlay) => {
 
         checkForWinner(player1, dealer, bet)
 
-        input = prompt('│  Would you like to play again (yes) or (no): ')
+        let input = prompt('│  Would you like to play again (yes) or (no): ')
         readyToPlay = checkToPlayAgain(input, dealer, player1);
     }
     return readyToPlay;
@@ -167,4 +167,4 @@ const checkForWinner = ( player1, dealer, bet ) => {
     }
 }
 
-module.exports = { beginGamePlay }
+export { beginGamePlay }

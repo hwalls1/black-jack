@@ -80,4 +80,4 @@ for (let i = 2; i < 11; i++) {
     })
 })
 
-module.exports = { Card, Deck }
+export { Card, Deck }

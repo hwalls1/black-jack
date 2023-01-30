@@ -1,5 +1,5 @@
-const { beginGamePlay } = require('./game.js')
-const ps = require("prompt-sync")
+import { beginGamePlay } from './game.js'
+import ps from "prompt-sync"
 const prompt = ps()
 
 console.log('\n')
@@ -20,7 +20,7 @@ while (beginPlay != 'no') {
         beginPlay = String(prompt('│ Enter (no) again if you are not ready to play. Enter (yes) if you are ready: '))
         console.log('|')
         if (beginPlay === "no") {
-            return;
+            break;
         }
     }
 }
