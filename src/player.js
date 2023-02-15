@@ -1,3 +1,4 @@
+import { blackJackNumber } from "./game"
 // Handles implementation of PlayersHand class 
 // Contains 3 methods (name(), hand(), and handValue())
 class PlayersHand {
@@ -32,10 +33,17 @@ class PlayersHand {
         this._handValue = 0
     }
 
-    // Adds another card 
     addCard(card) {
-        this._hand.push(card)
-        this._handValue += card.value
+        this._hand.push(card);
+        if (card.rank === 'A') {
+            if (this._handValue + 11 > blackJackNumber) {
+                this._handValue += 1;
+            } else {
+                this._handValue += 11;
+            }
+        } else {
+            this._handValue += card.value;
+        }
     }
 
     // Log the cards side by side to the console

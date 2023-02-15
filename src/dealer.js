@@ -3,6 +3,7 @@ import { PlayersHand } from './player.js'
 
 class Dealer extends PlayersHand {
     constructor(name) {
+        // calls players
         super(name)
         this._deck = Deck.slice(0)
     }
