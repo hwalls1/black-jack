@@ -1,5 +1,5 @@
-import { blackJackNumber } from "./game"
-// Handles implementation of PlayersHand class 
+import { blackJackNumber } from "./game.js"
+
 // Contains 3 methods (name(), hand(), and handValue())
 class PlayersHand {
     constructor(name) {
@@ -58,7 +58,6 @@ class PlayersHand {
     }
 }
 
-// 
 class Player extends PlayersHand {
     constructor(name) {
         super(name)
